@@ -22,7 +22,7 @@ public class Driver {
 	 * Creates a sample patient info and store them on internal storage.
 	 */
 	public static void createRandomPatientInfo() {
-		String firstName = RandomUtils.randomIdentifier();
+		/**String firstName = RandomUtils.randomIdentifier();
 		String middleName = RandomUtils.randomIdentifier();
 		String lastName = RandomUtils.randomIdentifier();
 		int age = RandomUtils.randomNumber(150);
@@ -36,7 +36,12 @@ public class Driver {
 			System.out.println("Patient [" + firstName + ", " + lastName + "] has been successfully processed!");
 		} else {
 			System.out.println("An error occurred while processing info for patient [" + firstName + ", " + lastName + "]!");
-		}
+		} **/
+		
+		Patient patient = new Patient();
+		Director director = new Director(patient);
+		director.build();
+		patient.getPatient();
 	}
 	
 }

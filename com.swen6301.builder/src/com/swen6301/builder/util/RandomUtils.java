@@ -75,8 +75,8 @@ public class RandomUtils {
 	 * @return a random sex type {@link String}.
 	 */
 	public static String randomSexString() {
-		String[] possibleSexValues = {null, "none", "male", "female"};
-		return possibleSexValues[RANDOM.nextInt(possibleSexValues.length)];
+		String[] possibleSexValues = {null, "none", "male", "female"}; 
+		return possibleSexValues[RANDOM.nextInt(possibleSexValues.length)];	
 	}
 	
 }
