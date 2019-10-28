@@ -17,7 +17,8 @@ public class Director {
 		patient.setHeight();
 		patient.setSex();
 		patient.setWeight();
-		patient.setBooldType();
+		patient.setOrganDonor();
+	
 		
 		}
 }

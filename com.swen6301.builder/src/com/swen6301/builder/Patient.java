@@ -1,7 +1,9 @@
 package com.swen6301.builder;
 
+import com.swen6301.builder.util.BLOOD_TYPES;
 import com.swen6301.builder.util.PersistenceUtils;
 import com.swen6301.builder.util.RandomUtils;
+import com.swen6301.builder.util.SEX_TYPES;
 
 public class Patient {
 
@@ -10,10 +12,10 @@ public class Patient {
 	private String lastName;
 	private int age;
 	private int weight;
-	private String sex;
+	private SEX_TYPES sex;
 	private int height;
 	private boolean organDonor;
-	private String bloodType ;
+	private BLOOD_TYPES bloodType ;
 	
 	
 	public Patient() {

@@ -13,7 +13,7 @@ public enum BLOOD_TYPES implements Serializable  {
 	B_NEG,
 	AB_POS,
 	AB_NEG ;  
-	public static BLOOD_TYPES getRandomColor() {
+	public static BLOOD_TYPES getRandom() {
         Random random = new Random();
         return values()[random.nextInt(values().length)];
     }
