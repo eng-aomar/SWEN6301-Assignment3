@@ -19,6 +19,5 @@ public class Director {
 		patient.setWeight();
 		patient.setOrganDonor();
 	
-		
 		}
 }

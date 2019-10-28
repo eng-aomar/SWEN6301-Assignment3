@@ -59,32 +59,32 @@ public final class ValidationUtils {
 		}
 		
 		// Check whether sex is not null and not empty.
-		//if(sex == null || sex.isEmpty()) {
-		//	throw new IllegalArgumentException("Sex can only be either 'male', 'female', or 'none'.");
-		//}
+//		if(SEX_TYPES.values() == null || SEX_TYPES.values()== SEX_TYPES.none) {
+//			throw new IllegalArgumentException("Sex can only be either 'male', 'female', or 'none'.");
+//		}
 		
 		// Check whether the sex is equal to either 'male, 'female', or 'none'.
-		if(!"male".equals(sex.toLowerCase()) && !"female".equals(sex.toLowerCase()) && !"none".equals(sex.toLowerCase())) {
-			throw new IllegalArgumentException("Sex can only be either 'male', 'female', or 'none'.");
-		}
-		
+//		if(!"male".equals(sex.toLowerCase()) && !"female".equals(sex.toLowerCase()) && !"none".equals(sex.toLowerCase())) {
+//			throw new IllegalArgumentException("Sex can only be either 'male', 'female', or 'none'.");
+//		}
+//		
 		// Check whether bloodType is not null.
-		if(bloodType == null) {
-			throw new IllegalArgumentException("Blood type cannot be null.");
-		}
+//		if(bloodType == null) {
+//			throw new IllegalArgumentException("Blood type cannot be null.");
+//		}
 		
 		// Check whether bloodType is either A+, A-, B+, B-, O+, O-, AB+, AB-, or 'none'.
-		if("a+".equals(BLOOD_TYPES.A_POS) &&
-				"a-".equals(BLOOD_TYPES.A_NEG) &&
-				"b+".equals(BLOOD_TYPES.B_POS) &&
-				"b-".equals(BLOOD_TYPES.B_NEG) &&
-				"ab+".equals(BLOOD_TYPES.AB_POS) && 
-				"ab-".equals(BLOOD_TYPES.AB_NEG) &&
-				"o+".equals(BLOOD_TYPES.O_POS) &&
-				"o-".equals(BLOOD_TYPES.O_NEG)) {
-			throw new IllegalArgumentException("Blood type can be either A+, A-, B+, B-, O+, O-, AB+, AB-, or 'none' in case the patient does not her blood type.");
-		}
-		
+//		if("a+".equals(BLOOD_TYPES.A_POS) &&
+//				"a-".equals(BLOOD_TYPES.A_NEG) &&
+//				"b+".equals(BLOOD_TYPES.B_POS) &&
+//				"b-".equals(BLOOD_TYPES.B_NEG) &&
+//				"ab+".equals(BLOOD_TYPES.AB_POS) && 
+//				"ab-".equals(BLOOD_TYPES.AB_NEG) &&
+//				"o+".equals(BLOOD_TYPES.O_POS) &&
+//				"o-".equals(BLOOD_TYPES.O_NEG)) {
+//			throw new IllegalArgumentException("Blood type can be either A+, A-, B+, B-, O+, O-, AB+, AB-, or 'none' in case the patient does not her blood type.");
+//		}
+//		
 		// patient's information is correct, therefore return "true".
 		return true;
 	}
