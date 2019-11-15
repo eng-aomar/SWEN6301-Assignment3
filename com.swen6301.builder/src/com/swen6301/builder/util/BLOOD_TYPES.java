@@ -9,13 +9,25 @@ public enum BLOOD_TYPES implements Serializable {
 
 	String blood_Type= null;
 
+	/***
+	 * 
+	 * @param bloodTypes
+	 */
 	BLOOD_TYPES(String bloodTypes) {
 		blood_Type = bloodTypes;
 	}
 
+	/***
+	 * 
+	 * @return blood_Type
+	 */
 	public String getBloodType() {
 		return blood_Type;
 	}
+	/***
+	 * getRandom functions returns an enumeration of type BLOOD_TYPES using Random library
+	 * @return
+	 */
 
 	public static BLOOD_TYPES getRandom() {
 		Random random = new Random();

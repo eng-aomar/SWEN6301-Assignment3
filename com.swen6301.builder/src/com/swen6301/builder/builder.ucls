@@ -10,8 +10,8 @@
       <operations public="true" package="true" protected="true" private="true" static="true"/>    
     </display>  
   </class>  
-  <class id="2" language="java" name="com.swen6301.builder.Director" project="com.swen6301.builder" 
-    file="/com.swen6301.builder/src/com/swen6301/builder/Director.java" binary="false" corner="BOTTOM_RIGHT">    
+  <class id="2" language="java" name="com.swen6301.builder.PersonDirector" project="com.swen6301.builder" 
+    file="/com.swen6301.builder/src/com/swen6301/builder/PersonDirector.java" binary="false" corner="BOTTOM_RIGHT">    
     <position height="-1" width="-1" x="185" y="139"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
       sort-features="false" accessors="true" visibility="true">      
@@ -37,22 +37,22 @@
       <operations public="true" package="true" protected="true" private="true" static="true"/>    
     </display>  
   </class>  
-  <generalization id="5">    
-    <end type="SOURCE" refId="4"/>    
-    <end type="TARGET" refId="1"/>  
-  </generalization>  
-  <association id="6">    
+  <association id="5">    
     <end type="SOURCE" refId="2" navigable="false">      
-      <attribute id="7" name="patient">        
+      <attribute id="6" name="patient">        
         <position height="0" width="0" x="157" y="-176"/>      
       </attribute>      
-      <multiplicity id="8" minimum="0" maximum="1">        
+      <multiplicity id="7" minimum="0" maximum="1">        
         <position height="0" width="0" x="157" y="-176"/>      
       </multiplicity>    
     </end>    
     <end type="TARGET" refId="1" navigable="true"/>    
     <display labels="true" multiplicity="true"/>  
   </association>  
+  <generalization id="8">    
+    <end type="SOURCE" refId="4"/>    
+    <end type="TARGET" refId="1"/>  
+  </generalization>  
   <association id="9">    
     <end type="SOURCE" refId="4" navigable="false">      
       <attribute id="10" name="patient">        

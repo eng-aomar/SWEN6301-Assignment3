@@ -20,10 +20,11 @@ public class Driver {
 	/**
 	 * Creates a sample patient info and store them on internal storage.
 	 */
+
 	public static void createRandomPatientInfo() {
 
 		PersonBuilder patient = new PatientBuilder();
-		Director director = new Director(patient);
+		PersonDirector director = new PersonDirector(patient);
 		director.build();
 		director.getPatient();
 	

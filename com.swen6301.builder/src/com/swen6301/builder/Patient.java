@@ -1,9 +1,4 @@
 package com.swen6301.builder;
-
-
-import com.swen6301.builder.util.BLOOD_TYPES;
-import com.swen6301.builder.util.SEX_TYPES;
-
 public class Patient {
 
 	/**
@@ -79,6 +74,9 @@ public class Patient {
 	private boolean organDonor;
 	private String bloodType;
 
+	/***
+	 * Patient constructor, initialize variables for quality code
+	 */
 	public Patient() {
 		this.age = 0;
 		this.bloodType = null;
@@ -91,7 +89,18 @@ public class Patient {
 		this.weight = 0;
 
 	}
-
+/***
+ * 
+ * @param firstName
+ * @param middleName
+ * @param lastName
+ * @param age
+ * @param weight
+ * @param sex
+ * @param height
+ * @param organDonor
+ * @param bloodType
+ */
 	public Patient(String firstName, String middleName, String lastName, int age, int weight, String sex, int height,
 			boolean organDonor, String bloodType) {
 
@@ -181,17 +190,17 @@ public class Patient {
 		strBuilder.append("+---------------------------------------------+\n");
 		strBuilder.append("|Patient Last Name: [" + getLastName() + "]\n");
 		strBuilder.append("+---------------------------------------------+\n");
-		strBuilder.append("|Patient Age: [" + getAge() + "]\n");
+		strBuilder.append("|Patient Age: [" + getAge() + " Year]\n");
 		strBuilder.append("+---------------------------------------------+\n");
-		strBuilder.append("|Patient Weight: [" + getWeight() + "]\n");
+		strBuilder.append("|Patient Weight: [" + getWeight() + " kg]\n");
 		strBuilder.append("+---------------------------------------------+\n");
-		strBuilder.append("|Patient Hieght: [" + getHeight() + "]\n");
+		strBuilder.append("|Patient Hieght: [" + getHeight() + " cm]\n");
 		strBuilder.append("+---------------------------------------------+\n");
-		strBuilder.append("|Patient Blood Type: [" + bloodType + "]\n");
+		strBuilder.append("|Patient Blood Type: [" + getBloodType() + "]\n");
 		strBuilder.append("+---------------------------------------------+\n");
-		strBuilder.append("|Patient Sex Type: [" + sex + "]\n");
+		strBuilder.append("|Patient Sex Type: [" + getSex() + "]\n");
 		strBuilder.append("+---------------------------------------------+\n");
-		strBuilder.append("|Patient isDonor: [" + organDonor + "]\n");
+		strBuilder.append("|Patient isDonor: [" + isOrganDonor() + "]\n");
 		strBuilder.append("+---------------------------------------------+\n");
 		return String.format(strBuilder.toString());
 	}

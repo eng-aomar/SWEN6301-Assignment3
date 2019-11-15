@@ -1,10 +1,13 @@
 package com.swen6301.builder;
 
-public class Director {
+public class PersonDirector {
 
 	private PersonBuilder patient;
-
-	public Director(PersonBuilder patient) {
+/***
+ * 
+ * @param patient
+ */
+	public PersonDirector(PersonBuilder patient) {
 		this.patient = patient;
 	}
 	 public Patient getPatient()
@@ -12,8 +15,6 @@ public class Director {
 	  return this.patient.getPatient();
 	 }
 	 
-	
-
 	public void build() {
 		patient.setAge();
 		patient.setBooldType();
