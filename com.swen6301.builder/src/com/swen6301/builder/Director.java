@@ -1,13 +1,19 @@
 package com.swen6301.builder;
 
 public class Director {
-	
-	private Patient patient ;
-	public Director (Patient patient) {
-		this.patient =patient;
+
+	private PersonBuilder patient;
+
+	public Director(PersonBuilder patient) {
+		this.patient = patient;
 	}
+	 public Patient getPatient()
+	 {
+	  return this.patient.getPatient();
+	 }
+	 
 	
-	
+
 	public void build() {
 		patient.setAge();
 		patient.setBooldType();
@@ -18,6 +24,5 @@ public class Director {
 		patient.setSex();
 		patient.setWeight();
 		patient.setOrganDonor();
-	
-		}
+	}
 }

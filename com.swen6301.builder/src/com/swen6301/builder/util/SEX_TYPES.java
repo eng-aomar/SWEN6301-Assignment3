@@ -3,16 +3,19 @@ package com.swen6301.builder.util;
 import java.util.Random;
 
 public enum SEX_TYPES {
-	MALE, FEMALE,none;
-	
-	public static SEX_TYPES getRandom() {
-        Random random = new Random();
-        return values()[random.nextInt(values().length)];
-    }
+	MALE("male"), FEMALE("female"), none("none");
+	String sex_types= null;
 
-	public Object toLowerCase() {
-		// TODO Auto-generated method stub
-		return null;
+	SEX_TYPES(String sex) {
+		sex_types = sex;
+	}
+
+	public String getSexType() {
+		return sex_types;
+	}
+	public static SEX_TYPES getRandom() {
+		Random random = new Random();
+		return values()[random.nextInt(values().length)];
 	}
 
 }
